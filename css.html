@@ -1,0 +1,178 @@
+/* ==========================================================================
+   1. Shared Global Resets & Typography
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Common Layout Wrapper */
+.card-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* ==========================================================================
+   2. Buttons & Typography Accents
+   ========================================================================== */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    color: #007bff;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+    color: #333333;
+    text-align: center;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #666666;
+    margin-bottom: 32px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s, transform 0.1s;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    width: 100%; /* Spans full width for forms */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* ==========================================================================
+   3. Index / Welcome Page Specifics
+   ========================================================================== */
+.welcome-container {
+    max-width: 500px;
+    padding: 50px 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.cta-buttons .btn {
+    width: 130px; /* Fixed sizes specifically for entry links */
+}
+
+/* ==========================================================================
+   4. Login / Form Specifics
+   ========================================================================== */
+.login-container {
+    max-width: 400px;
+    padding: 40px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.form-actions label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.form-actions a,
+.footer-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-actions a:hover,
+.footer-link a:hover {
+    text-decoration: underline;
+}
+
+.footer-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666666;
+}
